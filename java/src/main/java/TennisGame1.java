@@ -1,5 +1,5 @@
 
-public class TennisGame1 implements TennisGame {
+public class TennisGame {
     
     private int m_score1 = 0;
     private int m_score2 = 0;
