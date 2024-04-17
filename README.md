@@ -1,2 +1,2 @@
 # Tennis
-Tennis Refactoring Kata
+Tennis CleanCode Kata
