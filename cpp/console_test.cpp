@@ -1,3 +1,7 @@
+#include <iostream>
+#include "tennis.cpp"
+using namespace std;
+
 struct TestSet {
     int score1, score2;
     string result;
