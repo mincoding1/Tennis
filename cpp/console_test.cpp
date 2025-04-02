@@ -52,11 +52,14 @@ int main() {
         Tennis tennisGame;
         string result = tennisGame.tennis_score(arr[i].score1, arr[i].score2);
         if (result == arr[i].result) {
-            std::cout << "PASS" << std::endl;
+            std::cout << "P";
         }
         else {
-            std::cout << "result 가" << arr[i].result << "이 아니라"
+            std::cout << '\n';
+            std::cout << "FAIL : " << i << "/33 테스트에서 Fail 발생\n";
+            std::cout << "result가" << arr[i].result << "이 아니라 "
                 << result << "입니다" << std::endl;
+            break;
         }
     }
     return 0;
