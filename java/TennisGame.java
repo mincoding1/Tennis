@@ -68,7 +68,8 @@ class TennisGame {
         return score;
     }
 }
-public class Main {
+
+class Main {
     static Object[][] testCase = {
             {0, 0, "Love-All"},
             {1, 1, "Fifteen-All"},
