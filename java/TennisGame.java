@@ -116,7 +116,7 @@ class Main {
             }
             String result = tennisGame.getScore();
             if (result.equals(testCase[i][2])) {
-                System.out.println("PASS");
+                System.out.print("P");
             }
             else {
                 System.out.println("result 가 " + result + "입니다." + (String)(testCase[i][2]) + "여야 합니다");
