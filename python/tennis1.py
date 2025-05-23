@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
-
-class TennisGame1:
+class TennisGame:
 
     def __init__(self, player1Name, player2Name):
         self.player1Name = player1Name
@@ -95,14 +93,16 @@ if __name__ == "__main__":
     ]
 
     for p1Score, p2Score, result, name1, name2 in test_cases:
-        game = TennisGame1(name1, name2)
+        game = TennisGame(name1, name2)
         for i in range(p1Score):
             game.won_point(name1)
         for i in range(p2Score):
             game.won_point(name2)
 
         ret = game.score()
-        if ret != result:
+        if ret == result:
+            print('P', end='')
+        else:
             print(f"{p1Score} : {p2Score} 는 {result} 여야 합니다. 현재 결과는 {ret} 입니다")
             print("FAIL")
 
